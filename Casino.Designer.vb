@@ -32,6 +32,7 @@ Partial Class Casino
         Me.Bathroom = New System.Windows.Forms.Button()
         Me.Reset = New System.Windows.Forms.Button()
         Me.MoneyCounter = New System.Windows.Forms.Label()
+        Me.Bar = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -82,7 +83,7 @@ Partial Class Casino
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe Script", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(18, 51)
+        Me.Label1.Location = New System.Drawing.Point(13, 50)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(1347, 153)
@@ -138,12 +139,25 @@ Partial Class Casino
         Me.MoneyCounter.TabIndex = 6
         Me.MoneyCounter.Text = "Money: $1000"
         '
+        'Bar
+        '
+        Me.Bar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Bar.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Bar.Location = New System.Drawing.Point(1463, 798)
+        Me.Bar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Bar.Name = "Bar"
+        Me.Bar.Size = New System.Drawing.Size(316, 42)
+        Me.Bar.TabIndex = 7
+        Me.Bar.Text = "Go To The Bar"
+        Me.Bar.UseVisualStyleBackColor = False
+        '
         'Casino
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Gray
+        Me.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.ClientSize = New System.Drawing.Size(1792, 1018)
+        Me.Controls.Add(Me.Bar)
         Me.Controls.Add(Me.MoneyCounter)
         Me.Controls.Add(Me.Reset)
         Me.Controls.Add(Me.Bathroom)
@@ -172,4 +186,5 @@ Partial Class Casino
     Friend WithEvents Bathroom As Button
     Friend WithEvents Reset As Button
     Friend WithEvents MoneyCounter As Label
+    Friend WithEvents Bar As Button
 End Class
