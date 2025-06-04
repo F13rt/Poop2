@@ -33,6 +33,7 @@ Partial Class Casino
         Me.Reset = New System.Windows.Forms.Button()
         Me.MoneyCounter = New System.Windows.Forms.Label()
         Me.Bar = New System.Windows.Forms.Button()
+        Me.Money = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -151,12 +152,24 @@ Partial Class Casino
         Me.Bar.Text = "Go To The Bar"
         Me.Bar.UseVisualStyleBackColor = False
         '
+        'Money
+        '
+        Me.Money.AutoSize = True
+        Me.Money.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Money.ForeColor = System.Drawing.Color.Green
+        Me.Money.Location = New System.Drawing.Point(1543, 76)
+        Me.Money.Name = "Money"
+        Me.Money.Size = New System.Drawing.Size(236, 41)
+        Me.Money.TabIndex = 8
+        Me.Money.Text = "Money: $1000"
+        '
         'Casino
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.ClientSize = New System.Drawing.Size(1792, 1018)
+        Me.Controls.Add(Me.Money)
         Me.Controls.Add(Me.Bar)
         Me.Controls.Add(Me.MoneyCounter)
         Me.Controls.Add(Me.Reset)
@@ -187,4 +200,5 @@ Partial Class Casino
     Friend WithEvents Reset As Button
     Friend WithEvents MoneyCounter As Label
     Friend WithEvents Bar As Button
+    Friend WithEvents Money As Label
 End Class
